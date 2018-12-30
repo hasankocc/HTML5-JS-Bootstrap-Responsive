@@ -1,0 +1,67 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+html {
+    height:100%;
+    width:100%;
+    }
+body {
+    height:100%;
+    width:100%;
+    display:table;
+    table-layout:fixed;
+    margin:0 auto;
+    }
+.row {
+    display:table-row;
+    background:orange;
+	height:100%;
+	padding:20px;
+}
+.main {
+    display:table-row;
+    background:cyan;
+	height:100%;
+}
+		</style>
+	</head>
+	<body> 
+<header class="row">header content</header>
+<div class="main">
+<div style="background-color:blue;width:300px;height:900px; margin:20px;">
+<input type="button" value="btn1" id="btn1"/>
+<input type="button" value="btn2" id="btn2"/>
+<input type="button" value="btn3" id="btn3"/>
+<input type="button" value="btn4" id="btn4"/>
+<br/>
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+<input type="checkbox" name="cek" />
+</div>
+</div>
+<footer class="row">footer content</footer>
+<script>
+$('#btn1,#btn2,#btn3,#btn4').each(function(){
+$(this).click(function(){
+alert("burdayım");
+});
+});
+
+$('input[type="checkbox"]').on('change', function() {
+    $('input[name="' + this.name + '"]').not(this).prop('checked', false);
+});
+</script>
+</body>
+</html>
+
+
+

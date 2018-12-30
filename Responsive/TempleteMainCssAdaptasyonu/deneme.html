@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>Deneme</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" >
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
+<script src="https://cdn.rawgit.com/harvesthq/chosen/gh-pages/chosen.jquery.min.js"></script>
+
+</head>
+<body>
+<section>
+<h1>MultiSelectBox</h1>
+<form>
+  <select data-placeholder="Begin typing a name to filter..." multiple class="chosen-select" name="test">
+    <option value=""></option>
+    <option>American Black Bear</option>
+    <option>Asiatic Black Bear</option>
+    <option>Brown Bear</option>
+    <option>Giant Panda</option>
+    <option>Sloth Bear</option>
+    <option>Sun Bear</option>
+    <option>Polar Bear</option>
+    <option>Spectacled Bear</option>
+  </select>
+  <input type="submit">
+  <br>
+  </form>
+</section>
+<br><br><br>
+<section>
+ <h1>AutoCloseAlert</h1>
+ <input type="button" class="btn btn-primary" value = "Kaydet" data-target="#autoclose" data-toggle="modal" onclick = "AlertFunc()">
+ <div class="modal" role="modal" id ="autoclose" tabindex="-1">
+ <div class="modal-dialog">
+ <div class="modal-content">
+  <p>Hello World</p>
+ </div>
+ </div>
+ </div>
+</section>
+<script>
+//For MultiSelectBox
+$(".chosen-select").chosen({
+  no_results_text: "Bişey Bulunamadı!"
+});
+
+//For Alert
+function AlertFunc(){ 
+$(".modal").fadeIn(100)
+window.setTimeout(function() {
+    $(".modal").fadeOut(600).slideUp(600 , function(){
+	      $('#autoclose').modal('hide');
+	});
+}, 600);
+}
+</script>
+</body>
+</html>

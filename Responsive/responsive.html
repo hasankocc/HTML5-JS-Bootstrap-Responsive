@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<title>Responsive Design Website</title>
+<link rel="stylesheet" media="screen" href="responsive.css" >
+<style>
+
+{
+  margin:0;
+}
+html,body
+{
+ height:100%;
+ padding:0; 
+ box-sizing:border-box;
+}
+</style>
+</head>
+<body>
+<input type="text" value="hasankoc" name="txt">
+<input type="button" value="Buton" onclick="myFunc()">
+</body>
+<script>
+function myFunc()
+{
+  alert(document.getElementByName("txt").value);
+}
+</script>
+</html>

@@ -1,0 +1,34 @@
+                         <div class="row">
+						 <div class="col-md-12 col-sm-12 col-xs-12" >
+					     <div class="form-group" >
+						 <label class="control-label">Site Yönetim Yapısını Seçiniz</label>
+						 <button id="choose" for="options" width="100%" style="width:100%; padding:10px 10px; text-align:left; background-color:white; border:1px solid #D2D2D2;">Seçiniz<i class="fa fa-sort-down" style="float:right;"></i></button>
+                          <br clear="all"/>
+						  <select id="options" size="4" style="display:none; width:100%;" class="form-control">
+                            <option>Seçiniz</option>
+                            <option value="1">Bağımsız Bölümler-Site Yönetimi</option>
+                            <option value="2">Bağımsız Bölümler-Blok Yönetimi-Parsel Yönetimi-Ada Yönetimi-Toplu Yapı Yönetimi</option>
+                            <option value="3">Bağımsız Bölümler-Blok Yönetimi-Parsel Yönetimi-Toplu Yapı Yönetimi</option>
+                            <option value="4">Bağımsız Bölümler-Blok Yönetimi-Ada Yönetimi-Toplu Yapı Yönetimi</option>
+							<option value="5">Bağımsız Bölümler-Parsel Yönetimi-Ada Yönetimi-Toplu Yapı Yönetimi</option>
+							<option value="6">Bağımsız Bölümler-Blok Yönetimi-Toplu Yapı Yönetimi</option>
+                            <option value="7">Bağımsız Bölümler-Parsel Yönetimi-Toplu Yapı Yönetimi</option>
+							<option value="8">Bağımsız Bölümler-Ada Yönetimi-Toplu Yapı Yönetimi</option>
+                          </select>
+                         </div>
+                         </div>
+						 </div>
+						 
+						 
+						 	<!--SelectBox-->
+	<script>
+     $(document).ready(function(){
+     $("#choose").click(function(){
+       $(this).siblings("select").toggle();
+     });
+	 $("#options").dblclick(function(){
+       $(this).hide();
+	   $("#choose").text($("#options option:selected").text()).append( '<i class="fa fa-sort-down" style="float:right;"></i>' );
+     });
+     });
+    </script>

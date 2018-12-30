@@ -1,0 +1,28 @@
+
+.kutu1,.kutu2,.kutu3
+{
+  width:200px;
+  height:200px;
+  float:left;
+}
+div.kutu1
+{
+	background-color:yellow;
+	position:fixed;
+	right:30px;
+	bottom:100px;
+}
+div.kutu2
+{
+	background-color:cyan;
+	position:absolute;
+	left:300px;
+	top:100px;
+}
+div.kutu3
+{
+	position:relative;
+	left:500px;
+	bottom:20px;
+	background-color:green;
+}

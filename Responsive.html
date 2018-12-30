@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>
+Responsive
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink to fit=no">
+<style>
+html,body 
+{
+  box-sizing:border-box;         
+  height:auto;
+  margin:0;
+  font-family: "Lucida Sans", sans-serif;
+}
+#image
+{
+ width:100%;
+ height:auto;
+}
+body
+{
+  background-image:url(site.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:100%;
+}
+.container
+{
+  box-sizing:border-box;
+  max-width:100%;
+  height:100%;
+  padding:10px;
+  margin:auto;
+}
+.row
+{
+ box-sizing:border-box;
+ margin:auto;
+ padding:20px;
+ max-width:100%;
+ height:auto;
+ overflow:auto;
+}
+/****Responsive****/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@media only screen and (min-width: 700px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 960px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+/****************************/
+.column
+{
+  box-sizing:border-box;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background-color:#F1F1F1;
+  height:auto;
+  overflow:auto;
+}
+.quarter-column
+{
+  box-sizing:border-box;
+  float:left;
+  margin:0px;
+  padding:0px;
+  background-color:white;
+  height:auto;
+  overflow:auto;
+}
+.three-quarter-column
+{
+  box-sizing:border-box;
+  float:left;
+  margin:0;
+  padding:0px;
+  background-color:white;
+  height:auto;
+  overflow:auto;
+}
+.button-column
+{
+  box-sizing:border-box;
+  margin-top:20px;
+  padding:10px;
+  background-color:#33B5E5;
+  height:auto;
+  overflow:auto;
+}
+.button-column:hover
+{
+  background-color:#0099cc;
+}
+.right-side
+{
+ background-color:#33B5E5;
+ text-align:center;
+ margin:20px;
+ color:white;
+ padding:20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row" style="background-color:#4CAF50;">
+<h1>W3.CSS Demo</h1>
+<p>Resize the page to see the responsiveness</p>
+</div>
+<div class="row" style="background-color:#F1F1F1;">
+<div class="col-4 col-s-4 column">
+<h1>London</h1>
+<p>London is the capital city of England.</p>
+<p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+<div class="col-4 col-s-4 column">
+<h1>Paris</h1>
+<p>Paris is the capital of France.</p>
+<p>The Paris area is one of the largest population centers in Europe, with more than 12 million inhabitants.</p>
+</div>
+<div class="col-4 col-s-4 column">
+<h1>Tokyo</h1>
+<p>Tokyo is the capital of Japan.</p>
+<p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+</div>
+</div>
+<div class="row" style="background-color:#9933CC;">
+<h1><font color="white" face="Arial">Chania</font></h1>
+</div>
+<div class="row" style="background-color:white;">
+<div class="col-3 col-s-3 quarter-column">
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Flight</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The City</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Island</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Food</font></p>
+</div>
+</div>
+<div class="col-9 col-s-9 three-quarter-column">
+<h1><font color="black">The City</font></h1>
+<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+<p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+</div>
+<div class="row" style="background-color:white;">
+<div class="col-3 col-s-3 quarter-column">
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Flight</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The City</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Island</font></p>
+</div>
+<div class="col-11 col-s-11 button-column">
+<p><font color="white">The Food</font></p>
+</div>
+</div>
+<div class="col-6 col-s-6 quarter-column">
+<h1><font color="black">The City</font></h1>
+<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+<img src="site.jpg" id="image"/>
+</div>
+<div class="col-3 col-s-3 quarter-column" >
+<div class="right-side">
+<h2><center>What?</center></h2>
+<p><center>Chania is a city on the island of Crete</p>
+<p><h2><center>Where?</center></h2></p>
+<p><center>Crete is a Greek island in the Mediterranean Sea</p>
+<p><h2><center>How?</center></h2></p>
+<p><center>You can reach Chania airport from all over Europe</p>
+</div>
+</div>
+</div>
+<footer style="display:block; background-color:#0099CC;">
+<center style="padding:30px; color:white;">Resize the browser window to see how the content respond to the resizing</center>
+</footer>
+</div>
+</body>
+</html>
+

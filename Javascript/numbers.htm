@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p><br>
+**********************************<br>
+<p id="demo1"></p><br>
+*********************************<br>
+<p id="demo2"></p><br>
+*********************************<br>
+<p id="demo3"></p><br>
+*********************************<br>
+<p id="demo4"></p>
+
+<script>
+var x = 9.656;
+document.getElementById("demo").innerHTML =
+    x.toExponential() + "<br>" + 
+    x.toExponential(0) + "<br>" + 
+    x.toExponential(1) + "<br>" +
+	x.toExponential(2) + "<br>" + 
+    x.toExponential(4) + "<br>" + 
+    x.toExponential(6);
+</script>
+
+<script>
+var x = 9.656;
+document.getElementById("demo1").innerHTML =
+x.toFixed()  +"<br>"+               // returns 9.656
+x.toFixed(0) +"<br>"+              // returns 10
+x.toFixed(1) +"<br>"+             // returns 9.7
+x.toFixed(2) +"<br>"+            // returns 9.66
+x.toFixed(4) +"<br>"+           // returns 9.6560
+x.toFixed(6);                  // returns 9.656000
+
+</script>
+
+<script>
+var x = 9.656;
+document.getElementById("demo2").innerHTML =
+x.toPrecision()  +"<br>"+        // returns 9.656
+x.toPrecision(1) +"<br>"+       // returns 1e+1
+x.toPrecision(2) +"<br>"+      // returns 9.7
+x.toPrecision(4) +"<br>"+     // returns 9.656
+x.toPrecision(6);            // returns 9.65600
+</script>
+
+<script>
+var x = true;
+var y = false;     
+var z = new Date();
+
+document.getElementById("demo3").innerHTML=Number(x) +"<br>"+ Number(y) +"<br>"+ Number(z) + "<br>" + parseInt("10") +"<br>"+ parseFloat("10.10");
+
+
+</script>
+
+<script>
+var x = 4.7;
+
+document.getElementById("demo4").innerHTML = Math.PI +"<br>"+ Math.round(x) +"<br>"+ Math.pow(2,8) +"<br>"+ Math.sqrt(4) +"<br>"+ Math.abs(-4) +"<br>"+ Math.ceil(3.2) +"<br>"+ Math.floor(3.2) +"<br>"+ Math.sin(90*Math.PI/180) +"<br>"+ Math.cos(0*Math.PI/180) +"<br>"+ Math.min(1,2,3,4,5) +"<br>"+ Math.max(1,2,3,4,5) +"<br>"+ Math.random();
+
+
+</script>
+
+</body>
+</html>

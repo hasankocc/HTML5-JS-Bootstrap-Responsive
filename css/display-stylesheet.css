@@ -1,0 +1,44 @@
+.bir-none,.iki-none,.uc-none
+{
+display:none;
+}
+
+.bir-inline,.iki-inline,.uc-inline
+{
+	display:inline;
+	width:300px;
+	height:300px;
+	color:#fff;	
+}
+div.bir-inline
+{
+	background-color:gray;
+}
+div.iki-inline
+{
+	background-color:red;
+}
+div.uc-inline
+{
+	background-color:green;
+}
+
+.bir-inline-block,.iki-inline-block,.uc-inline-block
+{
+	color:#fff;
+	display:inline-block;
+}
+.bir-inline-block
+{
+	background-color:gray;
+}
+.iki-inline-block
+{
+	background-color:red;
+	height:50px;
+}
+.uc-inline-block
+{
+	background-color:green;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="row">
+<input id="field" type="text" value="TR" size="50" />
+</div>
+</div>
+<script>
+var readOnlyLength = $('#field').val().length;
+$('#field').on('keypress, keydown', function(event) {
+  if ((event.which != 37 && (event.which != 39)) &&
+    ((this.selectionStart < readOnlyLength) ||
+      ((this.selectionStart == readOnlyLength) && (event.which == 8)))) {
+    return false;
+  }
+});
+</script>
+</body> 
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>The push method appends a new element to an array.</p>
+
+<button onclick="myFunction()">Push</button>
+
+<p id="demo"></p><br>
+*****************************
+<p id="demo1"></p><br>
+*****************************
+<p id="demo2"></p> <br>
+*****************************
+<p id="demo3"></p><br>
+*****************************
+<p id="demo4"></p><br>
+*****************************
+<p id="demo5"></p><br>
+*****************************
+<p id="demo6"></p><br>
+*****************************
+<p id="demo7"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+/*
+var fruits = [];
+fruits[0]="Banana";
+fruits[1]="Orange";
+fruits[2]="Apple";
+fruits[3]="Mango";
+*/
+document.getElementById("demo").innerHTML = fruits;
+document.getElementById("demo1").innerHTML = fruits.join(" * ");
+document.getElementById("demo2").innerHTML = fruits.pop();
+document.getElementById("demo3").innerHTML = fruits.shift(); //remove first element
+document.getElementById("demo4").innerHTML = fruits.unshift("Kivi") + "<br>" + fruits; 
+document.getElementById("demo5").innerHTML = fruits.slice(1) +"<br>"+ fruits.slice(2,2) ;  /*ilk sayı başlangıç indexi ikinci sayı kaç tane yazılacağı*/ 
+document.getElementById("demo6").innerHTML = fruits.sort();/*alfabetik sıraya göre sıralar*/ 
+document.getElementById("demo7").innerHTML = fruits.reverse(); 
+
+
+function myFunction() {
+    fruits.push("Lemon"); //fruits[fruits.length]="..." kullanımı aynı
+    document.getElementById("demo").innerHTML = fruits;
+}
+
+</script>
+
+</body>
+</html>
